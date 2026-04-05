@@ -1,0 +1,9 @@
+# UK-HANK v3 — Research Edition Dependencies
+# Install: pip install -r requirements.txt
+
+sequence-jacobian==1.0.0
+numba>=0.60
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+pandas>=2.0

@@ -1,0 +1,21 @@
+[project]
+name = "uk-hank"
+version = "0.1.0"
+description = "UK-HANK: Heterogeneous Agent New Keynesian model for the UK economy"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "numba>=0.60",
+    "sequence-jacobian>=1.0.0",
+    "matplotlib>=3.9",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter", "ipykernel"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

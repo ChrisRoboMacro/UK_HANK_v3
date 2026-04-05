@@ -1,0 +1,65 @@
+{
+  "UK": {
+    "name": "United Kingdom",
+    "model": "DC-EGM",
+    "beta": 0.98735749812737,
+    "GDP_peak_pct": -0.7240930457765825,
+    "GDP_peak_Q": 5,
+    "CPI_3yr_pp": -1.6066818446688904,
+    "P_H_peak_pct": -1.7484115780742142
+  },
+  "US": {
+    "name": "United States",
+    "model": "DC-EGM",
+    "beta": 0.9855045600275352,
+    "GDP_peak_pct": -0.05632011318757478,
+    "GDP_peak_Q": 11,
+    "CPI_3yr_pp": -0.3159491052134187,
+    "P_H_peak_pct": -0.48567907068362576
+  },
+  "IT": {
+    "name": "Italy",
+    "model": "DC-EGM",
+    "beta": 0.9868193337812253,
+    "GDP_peak_pct": -0.09660676590171811,
+    "GDP_peak_Q": 13,
+    "CPI_3yr_pp": -0.23005492711551692,
+    "P_H_peak_pct": -0.7462044361900051
+  },
+  "DE": {
+    "name": "Germany",
+    "model": "hh_labor",
+    "beta": 0.9875819610459832,
+    "GDP_peak_pct": -0.420441492078955,
+    "GDP_peak_Q": 3,
+    "CPI_3yr_pp": -0.12975024072929706,
+    "P_H_peak_pct": 0.0
+  },
+  "FR": {
+    "name": "France",
+    "model": "hh_labor",
+    "beta": 0.9897698288051499,
+    "GDP_peak_pct": -0.586981392234662,
+    "GDP_peak_Q": 4,
+    "CPI_3yr_pp": -0.24631687417472573,
+    "P_H_peak_pct": 0.0
+  },
+  "JP": {
+    "name": "Japan",
+    "model": "hh_labor",
+    "beta": 0.9960698823719176,
+    "GDP_peak_pct": -0.21183545226804648,
+    "GDP_peak_Q": 12,
+    "CPI_3yr_pp": -0.07260999755244443,
+    "P_H_peak_pct": 0.0
+  },
+  "CA": {
+    "name": "Canada",
+    "model": "hh_labor",
+    "beta": 0.9865825594578791,
+    "GDP_peak_pct": -0.4438713174742757,
+    "GDP_peak_Q": 4,
+    "CPI_3yr_pp": -0.2120000931859456,
+    "P_H_peak_pct": 0.0
+  }
+}

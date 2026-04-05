@@ -1,0 +1,109 @@
+UK-HANK MODEL — SETUP INSTRUCTIONS
+====================================
+
+You need Python installed. That's it.
+
+
+STEP 1: INSTALL PYTHON (skip if you already have it)
+-----------------------------------------------------
+
+Download from: https://python.org/downloads
+
+Click the big yellow "Download Python" button and run the installer.
+
+*** WINDOWS USERS: During installation, tick the box at the bottom
+    that says "Add Python to PATH". This is essential. ***
+
+Mac users: Python is usually pre-installed. If not: brew install python
+
+
+STEP 2: INSTALL DEPENDENCIES
+------------------------------
+
+Open a terminal:
+  - Windows: press Windows key, type "cmd", press Enter
+  - Mac: open Terminal from Applications > Utilities
+
+Type these two commands:
+
+    cd Downloads/uk-hank-model
+    pip install -r requirements.txt
+
+If "pip" is not recognised, try this instead:
+
+    python -m pip install -r requirements.txt
+
+
+STEP 3: RUN THE MODEL
+-----------------------
+
+Graphical interface (recommended — opens a window with sliders and charts):
+
+    python gui.py
+
+Command line (prints results in the terminal):
+
+    python run_model.py
+
+That's it. The model runs in under 1 second.
+
+
+MORE OPTIONS (command line)
+----------------------------
+
+    python run_model.py --shock 2.0          Bigger rate hike (2pp)
+    python run_model.py --shock -1.0         Rate CUT
+    python run_model.py --interactive        Change any parameter live
+    python run_model.py --export results.csv Save results to spreadsheet
+    python run_model.py --plot               Save chart as image
+
+
+TROUBLESHOOTING
+----------------
+
+"python is not recognized" (Windows):
+  Reinstall Python and tick "Add Python to PATH" during installation.
+
+"No module named tkinter" (gui.py won't open):
+  Use the command-line version instead: python run_model.py --interactive
+  Or on Mac: brew install python-tk
+  Or on Linux: sudo apt install python3-tk
+
+"No module named matplotlib":
+  Run: pip install matplotlib
+
+Windows Defender blocks a file:
+  Ignore setup.bat. Just use the commands above — they do the same thing.
+
+
+WHAT THIS MODEL DOES
+---------------------
+
+When the Bank of England raises interest rates by 1 percentage point:
+
+  - GDP falls 0.69% (peaks at quarter 5)
+  - Consumer prices fall 1.59pp over 3 years
+  - House prices fall 1.75%
+
+You can adjust any of the 18 parameters to see how the economy responds
+differently. The graphical interface (gui.py) lets you do this with
+sliders. The command line (run_model.py) lets you script it.
+
+Replication of Bank of England Macro Technical Paper No. 7 (March 2026).
+FULL SSJ MODEL (RESEARCH EDITION)
+-----------------------------------
+
+This is the Standard Edition — a calibrated linear approximation of the
+full model, accurate to >97%. It runs instantly with no heavy dependencies.
+
+For the complete 3,824-line SSJ replication with DC-EGM StageBlock
+household, 18 blocks, 7 GE unknowns, and full nonlinear impulse
+responses, download the Research Edition from:
+
+    https://robomacro.com/hank  (Download tab)
+
+The Research Edition requires sequence-jacobian 1.0.0, numba 0.64,
+and takes 10-30 seconds per run.
+
+
+Built by RoboMacro — https://robomacro.com/hank
