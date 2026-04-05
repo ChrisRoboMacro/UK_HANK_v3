@@ -1,5 +1,7 @@
 # UK-HANK v3 — Full SSJ Replication of Bank of England MTP No. 7
 
+Please send comments and queries and critiques to chris robomacro.com
+
 A complete, open-source replication of the **Heterogeneous Agent New Keynesian (HANK) model** from [Bank of England Macro Technical Paper No. 7](https://www.bankofengland.co.uk/-/media/boe/files/macro-technical-paper/2026/a-uk-hank-model.pdf) (Albuquerque, Hill, Lavender, Lenney & Polo, March 2026).
 
 **3,824 lines of Python** using the [Sequence-Space Jacobian](https://github.com/shade-econ/sequence-jacobian) method (Auclert et al., *Econometrica* 2021).
