@@ -1,0 +1,6 @@
+# Silence CodeRabbit auto-review + status noise (Chris 2026-09-10).
+# Prefer suspending the CodeRabbit GitHub App under Settings → Applications.
+reviews:
+  auto_review:
+    enabled: false
+  review_status: false
